@@ -17,6 +17,11 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+/* For scroll snap and align for each sections */
+html{
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
 
 a {
   font-weight: 500;
