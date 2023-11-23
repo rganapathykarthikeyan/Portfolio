@@ -1,7 +1,8 @@
 import React, {useEffect} from 'react'
 import { gsap } from 'gsap'
 import SplitTextJS from 'split-text-js';
-import classes from './info.module.css'
+import classes from './info.module.css';
+import {motion} from 'framer-motion'
 
 const Info = () => {
 
@@ -18,13 +19,14 @@ const Info = () => {
   }, [])
 
   return (
-    <div className='p-16 border-r border-l'>
+    <motion.div className='p-8 lg:border-r lg:border-l sm:p-16'
+      initial={{opacity:0, y:35}} whileInView={{opacity:1, y:0}} transition={{type:"spring", stiffness: 200}}>
       <div className='pt-2'>
-        <p className='font-Pacifico text-xl'>Hi. I am</p>
+        <p className='font-Pacifico text-m sm:text-xl'>Hi. I am</p>
       </div>
       <div className={`pt-4 ${classes.main}`}>
-        <p className={`font-BlackOps text-6xl ${classes.title}`}>GANAPATHY</p>
-        <p className={`font-BlackOps text-6xl ${classes.title2}`}>KARTHIKEYAN R</p>
+        <p className={`font-BlackOps text-4xl sm:text-6xl ${classes.title}`}>GANAPATHY</p>
+        <p className={`font-BlackOps text-4xl sm:text-6xl ${classes.title2}`}>KARTHIKEYAN R</p>
       </div>
         <div style={{lineHeight: 0, listStyle:'none'}} className='mt-6 text-3xl'>
           <li className='font-Oswald'>HTML</li>
@@ -33,7 +35,7 @@ const Info = () => {
           <li className='font-Oswald'>React JS</li>
           <li className='font-Oswald'>Web Developer</li>
         </div>
-    </div>
+    </motion.div>
   )
 }
 

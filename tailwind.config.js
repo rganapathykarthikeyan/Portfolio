@@ -6,7 +6,9 @@ export default {
     fontFamily: {
       BlackOps: ['Black Ops One', 'sans-serif'],
       Oswald: ['Oswald', 'sans-serif'],
-      Pacifico: ['Pacifico', 'sans-serif']
+      Pacifico: ['Pacifico', 'sans-serif'],
+      Raleway: ['Raleway', 'sans-serif'],
+      Teko: ['Teko', 'sans-serif']
     },
     extend: {
       backgroundImage:{
