@@ -1,13 +1,13 @@
 .title:before {      /*Places another word before the tag*/
     content: "GANAPATHY";
     color: #ffffff;
-    font-family: 'Black Ops One', sans-serif;
+    font-family: 'Abril Fatface', sans-serif;
 }
 
 .title2:before {      /*Places another word before the tag*/
     content: "KARTHIKEYAN R";
     color: #ffffff;
-    font-family: 'Black Ops One', sans-serif;
+    font-family: 'Abril Fatface', sans-serif;
 }
 
 .title, .title2{

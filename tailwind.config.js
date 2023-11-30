@@ -8,7 +8,8 @@ export default {
       Oswald: ['Oswald', 'sans-serif'],
       Pacifico: ['Pacifico', 'sans-serif'],
       Raleway: ['Raleway', 'sans-serif'],
-      Teko: ['Teko', 'sans-serif']
+      Teko: ['Teko', 'sans-serif'],
+      Abril: ['Abril Fatface','sans-serif']
     },
     extend: {
       backgroundImage:{

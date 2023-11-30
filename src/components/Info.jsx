@@ -25,8 +25,8 @@ const Info = () => {
         <p className='font-Pacifico text-m sm:text-xl'>Hi. I am</p>
       </div>
       <div className={`pt-4 ${classes.main}`}>
-        <p className={`font-BlackOps text-4xl sm:text-6xl ${classes.title}`}>GANAPATHY</p>
-        <p className={`font-BlackOps text-4xl sm:text-6xl ${classes.title2}`}>KARTHIKEYAN R</p>
+        <p className={`font-Abril text-4xl sm:text-6xl ${classes.title}`}>GANAPATHY</p>
+        <p className={`font-Abril text-4xl sm:text-6xl ${classes.title2}`}>KARTHIKEYAN R</p>
       </div>
         <div style={{lineHeight: 0, listStyle:'none'}} className='mt-6 text-3xl'>
           <li className='font-Oswald'>HTML</li>

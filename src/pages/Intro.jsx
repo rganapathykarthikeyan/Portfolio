@@ -6,7 +6,7 @@ import ImageShow from '../components/ImageShow'
 const Intro = () => {
   return (
     <>
-        <div className='h-full w-9/10 flex flex-col items-center justify-start lg:flex-row lg:justify-center'>
+        <div className='h-full w-full flex flex-col items-center justify-start lg:flex-row lg:justify-center'>
             <Links />
             <Info />
             <ImageShow />
