@@ -7,6 +7,7 @@ import jsicon from '../assets/jsicon.svg'
 import reactIcn from "../assets/reacticon.svg"
 import pythonicon from '../assets/pythonicon.svg'
 import firebaseicon from '../assets/firebaseicon.svg'
+import tailwindicon from  '../assets/tailwind.svg'
 
 import { Refresh } from '../components/refresh';
 
@@ -47,6 +48,12 @@ const icons = [
     name: 'firebaseicon',
     title: "Firebase"
   },
+  {
+    id:7,
+    icon: tailwindicon,
+    name: "tailwindicon",
+    title: "TailWind"
+  }
 ]
 
 
@@ -78,11 +85,11 @@ const About = () => {
         <div className='flex flex-row w-full justify-evenly flex-wrap'>
           {icons.map(icon => {
             return (
-              <motion.div className=' cursor-pointer flex flex-col items-center p-5'
+              <motion.div className=' cursor-pointer flex flex-col justify-center items-center mt-2 p-3 h-20 w-20 bg-[#1e293b43] hover:shadow-lg hover:shadow-[#192230] rounded-lg sm:h-28 sm:w-28 sm:mt-5'
                 variants={animationVarients} 
                 animate={refresh ? "reset" : "rest"} 
                 transition={{ duration: 3 }} 
-                drag dragConstraints={{ top: 0, left: -50, right: 50, bottom: 50 }} key={icon.id}>
+                drag dragConstraints={{ top: 0, left: -70, right: 100, bottom: 70 }} key={icon.id}>
                 <img src={icon.icon} alt={icon.name} className='h-6 sm:h-10 lg:h-10' draggable="false"/>
                 <span className='font-Teko text-2xl'>{icon.title}</span>
               </motion.div>

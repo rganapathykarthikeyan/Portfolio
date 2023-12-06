@@ -35,7 +35,7 @@ const Projects = () => {
       id: 1,
       name: "Fuzzy API Search",
       image: Fuzzy,
-      module: ["React", "Material UI", "fuse.js", "Modal"]
+      module: ["React", "Material UI", "fuse.js", "Modal", "JSON"]
     },
     {
       id: 2,
@@ -53,7 +53,7 @@ const Projects = () => {
       id: 4,
       name: "This Portfolio",
       image: Portfolio,
-      module: ["React", "Tailwind CSS", "Framer-motion", "split-text-js"]
+      module: ["React", "Tailwind CSS", "TypeScript", "Framer-motion", "split-text-js"]
     }
   ]
 
@@ -63,7 +63,7 @@ const Projects = () => {
         <div className='font-Abril text-4xl text-white sm:text-6xl'>PROJECTS</div>
       </motion.div>
       <div className='w-screen flex flex-col-reverse lg:flex-row'>
-        <div className='h-full flex-1 '>
+        <motion.div initial={{ opacity: 0, y: -35 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.8, duration: 0.8 }} className='h-full flex-1 sm:mt-5'>
           <div className='flex flex-row flex-wrap lg:flex-col'>
             {Projects.map(project => {
 
@@ -83,8 +83,8 @@ const Projects = () => {
               }
             })}
           </div>
-        </div>
-        <div className='flex-1 flex-col p-5'>
+        </motion.div>
+        <motion.div initial={{ opacity: 0, y: 35 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.8, duration: 0.8 }} className='flex-1 flex-col p-5 sm:mt-5' >
           <div className='flex justify-center items-center mb-3'>
             <div className='border-slate-400 border p-2 rounded-lg  '>
               <img src={Projects[proj].image} className='h-52 lg:h-96' />
@@ -99,10 +99,10 @@ const Projects = () => {
               )
             })}
           </div>
-          <div className='w-full flex m-2 justify-end'>
+          <div className='w-full flex m-2 mr-4 justify-end'>
             <button onClick={nextOne} className='bg-[#1e293ba8]'>Next</button>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   )

@@ -9,7 +9,11 @@ export default {
       Pacifico: ['Pacifico', 'sans-serif'],
       Raleway: ['Raleway', 'sans-serif'],
       Teko: ['Teko', 'sans-serif'],
-      Abril: ['Abril Fatface','sans-serif']
+      Abril: ['Abril Fatface','sans-serif'],
+      Nova:['Nova Square','sans-serif'],
+      IBM: ['IBM Plex Mono', 'monospace'],
+      Merri: ['Merriweather', 'serif'],
+      Anton: ['Anton', 'serif'],
     },
     extend: {
       backgroundImage:{
