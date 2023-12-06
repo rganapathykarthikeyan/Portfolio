@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react'
 import { motion } from 'framer-motion'
 import emailjs from '@emailjs/browser'
+import resume from '../assets/resume/GK_Resume.pdf'
 
 const Contact = () => {
   const formRef = useRef()
@@ -50,15 +51,15 @@ const Contact = () => {
           className='rounded-lg bg-[#1e293ba8] p-1 sm:p-5 sm:w-1/2'>
           <form ref={formRef} onSubmit={handleSubmit}>
             <label className='flex flex-col p-1 sm:p-2'>
-              <span className='font-IBM text-l sm:text-xl'>Name</span>
+              <span className='font-IBM text-base sm:text-xl'>Name</span>
               <input type='text' name='name' value={form.name} onChange={handleChange} placeholder="Your Name" className='border-none bg-[#1e293bea] p-1 sm:p-2 rounded-md placeholder:font-Raleway text-white font-Raleway' />
             </label>
             <label className='flex flex-col p-1 sm:p-2'>
-              <span className='font-IBM text-l sm:text-xl'>Email</span>
+              <span className='font-IBM text-base sm:text-xl'>Email</span>
               <input type='text' name='email' value={form.email} onChange={handleChange} placeholder='Your Email' className='border-none bg-[#1e293bea] p-1 sm:p-2 rounded-md placeholder:font-Raleway text-white font-Raleway' />
             </label>
             <label className='flex flex-col p-1 sm:p-2'>
-              <span className='font-IBM text-l sm:text-xl'>Message</span>
+              <span className='font-IBM text-base sm:text-xl'>Message</span>
               <textarea rows={4} type='text' name='message' value={form.message} onChange={handleChange} placeholder='Please enter your message' className='border-none bg-[#1e293bea] p-1 sm:p-2 rounded-md placeholder:font-Raleway text-white font-Raleway' />
             </label>
             <button type='submit' className='border-white font-IBM m-1'>
@@ -67,22 +68,28 @@ const Contact = () => {
           </form>
         </motion.div>
         <motion.div initial={{ opacity: 0, x: 35 }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: 0.8, duration: 0.8 }}
-          className=' rounded-lg bg-transparent flex flex-col justify-center items-start p-2 sm:ml-5 sm:w-1/2'>
-          <div className='font-Merri text-4xl text-[#85e6fe] sm:text-6xl'>Let's work together</div>
+          className=' rounded-lg bg-transparent flex flex-col justify-center items-start p-1  m-1 sm:ml-5 sm:w-1/2'>
+          <div className='font-Merri text-3xl text-[#85e6fe] sm:text-6xl'>Let's work together</div>
           <div className='sm:p-3'>
-            <div className='p-2 sm:p-3'>
-              <div className='font-Merri text-xl'>Mail</div>
+            <div className='p-1 sm:p-3'>
+              <div className='font-Merri text-l'>Mail</div>
               <div className='font-Raleway'>rganapathykarthikeyan8@gmail.com</div>
             </div>
-            <div className='p-2 sm:p-3'>
-              <div className='font-Merri text-xl'>Address</div>
+            <div className='p-1 sm:p-3'>
+              <div className='font-Merri text-l'>Address</div>
               <div className='font-Raleway'>13, Agilandapuram Street, Tirunelveli Town</div>
               <div className='font-Raleway'>Tirunelveli, India - 627006</div>
             </div>
-            <div className='p-2 sm:p-3'>
-              <div className='font-Merri text-xl'>Phone</div>
-              <div className='font-Raleway'>+91 8667269854</div>
+            <div className='p-1 flex flex-row items-center justify-between sm:p-3'>
+              <div>
+                <div className='font-Merri text-l'>Phone</div>
+                <div className='font-Raleway'>+91 8667269854</div>
+              </div>
+              <div>
+                <a href={resume} download="Ganapathy-Resume" target="_blank" rel="noopener noreferrer" className='p-2 bg-[#0095ff] hover:bg-[#0095ff71] hover:text-white rounded-lg text-white sm:p-3 sm:hidden'>Resume</a>
+              </div>
             </div>
+            <a href={resume} download="Ganapathy-Resume" target="_blank" rel="noopener noreferrer" className='p-2 bg-[#0095ff] hover:bg-[#0095ff71] hover:text-white rounded-lg text-white sm:p-3 hidden sm:flex sm:justify-center'>Download Resume</a>
           </div>
         </motion.div>
       </div>

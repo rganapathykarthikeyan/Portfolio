@@ -29,13 +29,15 @@ const Projects = () => {
       id: 0,
       name: "Covid Map",
       image: Taiyo,
-      module: ["React", "CSS", "react-query", "chart.js", "leaflet", "react-redux", "react-router"]
+      module: ["React", "CSS", "react-query", "chart.js", "leaflet", "react-redux", "react-router"],
+      link: "https://taiyo-challenge.vercel.app/"
     },
     {
       id: 1,
       name: "Fuzzy API Search",
       image: Fuzzy,
-      module: ["React", "Material UI", "fuse.js", "Modal", "JSON"]
+      module: ["React", "Material UI", "fuse.js", "Modal", "JSON"],
+      link: "https://qmax-challenge.vercel.app/"
     },
     {
       id: 2,
@@ -53,7 +55,8 @@ const Projects = () => {
       id: 4,
       name: "This Portfolio",
       image: Portfolio,
-      module: ["React", "Tailwind CSS", "TypeScript", "Framer-motion", "split-text-js"]
+      module: ["React", "Tailwind CSS", "TypeScript", "Framer-motion", "split-text-js"],
+      link: "https://rganapathykarthikeyan.vercel.app/"
     }
   ]
 
@@ -86,8 +89,10 @@ const Projects = () => {
         </motion.div>
         <motion.div initial={{ opacity: 0, y: 35 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.8, duration: 0.8 }} className='flex-1 flex-col p-5 sm:mt-5' >
           <div className='flex justify-center items-center mb-3'>
-            <div className='border-slate-400 border p-2 rounded-lg  '>
-              <img src={Projects[proj].image} className='h-52 lg:h-96' />
+            <div className='border-slate-400 border p-2 rounded-lg hover:border-[#0095ff]'>
+              <a href={Projects[proj].link} target='_blank'>
+                <img src={Projects[proj].image} className='h-52 lg:h-96' />
+              </a>
             </div>
           </div>
           <div className='p-2 rounded-lg bg-[#1e293ba8] border-[#0095ff] border flex flex-row flex-wrap'>
