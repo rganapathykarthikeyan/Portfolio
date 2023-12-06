@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { motion } from "framer-motion"
 import Taiyo from '../assets/img/taiyo.png'
-import Fuzzy from '../assets/img/fuzzy.png'
+import Fuzzy from '../assets/img/Fuzzy.png'
 import Gamenotes from '../assets/img/gamenotes.jpg'
 import SmartBin from '../assets/img/smartBin.jpg'
 import Portfolio from '../assets/img/portfolio.png'
