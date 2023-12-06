@@ -69,15 +69,15 @@ const Projects = () => {
 
               if (proj === project.id) {
                 return (
-                  <button onClick={() => { onselectProj(project.id) }} key={project.id} className='bg-transparent border-white text-left'>
-                    <span className='font-Teko text-l lg:text-7xl'>{project.name}</span>
+                  <button onClick={() => { onselectProj(project.id) }} key={project.id} className='bg-transparent border-white focus:outline-none shadow-lg shadow-[#192230] text-left'>
+                    <span className='font-Teko text-l lg:text-7xl border-none'>{project.name}</span>
                   </button>
                 )
               }
               else {
                 return (
                   <button onClick={() => { onselectProj(project.id) }} key={project.id} className='bg-transparent border-none text-left'>
-                    <span className='font-Teko text-l lg:text-7xl'>{project.name}</span>
+                    <span className='font-Teko text-l lg:text-7xl  border-none'>{project.name}</span>
                   </button>
                 )
               }

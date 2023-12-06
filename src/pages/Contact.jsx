@@ -76,7 +76,8 @@ const Contact = () => {
             </div>
             <div className='p-2 sm:p-3'>
               <div className='font-Merri text-xl'>Address</div>
-              <div className='font-Raleway'>13, Agilandapuram Street, Tirunelveli</div>
+              <div className='font-Raleway'>13, Agilandapuram Street, Tirunelveli Town</div>
+              <div className='font-Raleway'>Tirunelveli, India - 627006</div>
             </div>
             <div className='p-2 sm:p-3'>
               <div className='font-Merri text-xl'>Phone</div>
