@@ -9,7 +9,7 @@ import pythonicon from '../assets/pythonicon.svg'
 import firebaseicon from '../assets/firebaseicon.svg'
 import tailwindicon from  '../assets/tailwind.svg'
 
-import { Refresh } from '../components/refresh';
+import { Refresh } from '../components/Refresh';
 
 const icons = [
   {
