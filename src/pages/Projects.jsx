@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 import Taiyo from '../assets/img/taiyo.png'
 import Fuzzy from '../assets/img/Fuzzy.png'
 import Gamenotes from '../assets/img/gamenotes.jpg'
-import SmartBin from '../assets/img/SmartBin.jpg'
+import SmartBin from '../assets/img/Smartbin.jpg'
 import Portfolio from '../assets/img/portfolio.png'
 import tick from '../assets/verified.svg'
 
