@@ -80,7 +80,7 @@ const Projects = () => {
               else {
                 return (
                   <button onClick={() => { onselectProj(project.id) }} key={project.id} className='bg-transparent border-none text-left'>
-                    <span className='font-Teko text-l lg:text-7xl  border-none'>{project.name}</span>
+                    <span className='font-Teko text-l lg:text-7xl text-slate-100 border-none'>{project.name}</span>
                   </button>
                 )
               }

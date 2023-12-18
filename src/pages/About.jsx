@@ -79,7 +79,7 @@ const About = () => {
       </motion.div>
       <motion.div className='w-[85%] h-[85%]' initial={{ opacity: 0, y: 25 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 2, duration: 1.5 }}>
         <div className='flex flex-row justify-between items-center pb-3 border-b'>
-          <span className='font-Pacifico text-xl'>Skills:</span>
+          <span className='font-Pacifico text-white text-xl'>Skills:</span>
           <div className='border shadow p-2 shadow-[#192230] bg-[#1e293b34] rounded-lg'><Refresh onClick={() => {setRefresh(pre => !pre); console.log(refresh)}} /></div>
         </div>
         <div className='flex flex-row w-full justify-evenly flex-wrap'>
