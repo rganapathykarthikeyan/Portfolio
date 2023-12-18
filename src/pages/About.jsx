@@ -69,7 +69,7 @@ const About = () => {
   return (
     <div className='h-full w-full flex flex-col items-center justify-start p-8'>
       <motion.div initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8 }}>
-        <div className='font-Abril text-4xl text-white sm:text-6xl'>ABOUT ME</div>
+        <div className='font-Abril text-4xl text-[#ffffff] sm:text-6xl mb-1'>ABOUT ME</div>
       </motion.div>
       <motion.div className='hidden w-[85%] font-Teko text-slate-300 rounded-lg border text-xl shadow-lg shadow-[#192230] bg-[#1e293ba8] border-[#0095ff]  p-6 m-2 sm:flex hover:border-slate-100' initial={{ opacity: 0, y: 25 }} whileInView={{ opacity: 1, y: 0 }} whileHover={{ scale: 1.1 }} transition={{ duration: 1 }}>
         Hello, I am Ganapathy Karthikeyan, born in Tirunelveli. I have been interested in Computers ever since I was a kid. I pursued my interest and completed my Bachelor's in CS. I had a passion for Web Development and Game Development fields. I like the way the product changes after a few tweaks in the code. As I completed the degree, I learned the web development framework "React" and the basics of Flutter.
@@ -91,12 +91,17 @@ const About = () => {
                 transition={{ duration: 3 }} 
                 drag dragConstraints={{ top: 0, left: -70, right: 100, bottom: 70 }} key={icon.id}>
                 <img src={icon.icon} alt={icon.name} className='h-6 sm:h-10 lg:h-10' draggable="false"/>
-                <span className='font-Teko text-2xl'>{icon.title}</span>
+                <span className='font-Teko text-2xl text-[#ffffff]'>{icon.title}</span>
               </motion.div>
             )
           })}
         </div>
       </motion.div>
+      <div className='xs:bottom-3 lg:hidden bottom-10 w-full flex justify-center items-start'>
+          <div className='w-[30px] h-[54px] rounded-3xl border-4 border-slate-300 flex justify-center item-start p-1'>
+            <motion.div animate={{y: [0,15,0]}} transition={{duration: 1.5, repeat: Infinity, repeatType: 'loop'}} className='w-3 h-3 rounded-full bg-slate-300 m-1' />
+          </div>
+        </div>
     </div>
   )
 }

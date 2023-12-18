@@ -7,7 +7,7 @@ import {motion} from 'framer-motion';
 const Links = () => {
     return (
         <div className='flex flex-row p-4 w-full justify-between items-center border-b lg:border-b-0 lg:w-fit lg:flex-col'>
-            <motion.div className='flex h-full justify-center items-center lg:hidden font-Raleway text-xl sm:text-2xl'
+            <motion.div className='flex h-full justify-center items-center text-[#ffffff] lg:hidden font-Raleway text-xl sm:text-2xl'
                 initial={{opacity: 0, scale: 0.5}} whileInView={{opacity:1, scale:1}} transition={{duration: 0.8}}>
                 React Developer
             </motion.div>
